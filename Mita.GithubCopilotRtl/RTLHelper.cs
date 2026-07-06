@@ -12,7 +12,7 @@ using System.Windows.Documents;
 using System.Windows.Media;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace Mita.GithubCopilotRtl
+namespace Mita.GitHubCopilotRtl
 {
     public static class RTLHelper
     {

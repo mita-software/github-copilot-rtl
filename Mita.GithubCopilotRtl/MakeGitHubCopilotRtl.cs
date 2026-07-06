@@ -11,7 +11,7 @@ using System.Windows;
 using System.Windows.Media;
 using Task = System.Threading.Tasks.Task;
 
-namespace Mita.GithubCopilotRtl
+namespace Mita.GitHubCopilotRtl
 {
     /// <summary>
     /// Command handler

@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Mita.GithubCopilotRtl
+namespace Mita.GitHubCopilotRtl
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.
@@ -30,12 +30,12 @@ namespace Mita.GithubCopilotRtl
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [ProvideAutoLoad(UIContextGuids.NoSolution, PackageAutoLoadFlags.BackgroundLoad)]
-    [Guid(MitaGithubCopilotRtlPackage.PackageGuidString)]
+    [Guid(MitaGitHubCopilotRtlPackage.PackageGuidString)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
-    public sealed class MitaGithubCopilotRtlPackage : AsyncPackage
+    public sealed class MitaGitHubCopilotRtlPackage : AsyncPackage
     {
          /// <summary>
-         /// Mita.GithubCopilotRtlPackage GUID string.
+         /// Mita.GitHubCopilotRtlPackage GUID string.
          /// </summary>
         public const string PackageGuidString = "879daee3-3919-4ddc-9d0c-4236cb9cc22b";
         public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
@@ -55,7 +55,7 @@ namespace Mita.GithubCopilotRtl
             // Do any initialization that requires the UI thread after switching to the UI thread.
             await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
-            await Mita.GithubCopilotRtl.MakeGitHubCopilotRtl.InitializeAsync(this);
+            await Mita.GitHubCopilotRtl.MakeGitHubCopilotRtl.InitializeAsync(this);
 
             KeyboardDirectionHandler.Initialize();
         }

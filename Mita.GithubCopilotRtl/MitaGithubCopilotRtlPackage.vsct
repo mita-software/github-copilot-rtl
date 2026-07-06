@@ -22,7 +22,7 @@
 
   <!--The Commands section is where commands, menus, and menu groups are defined.
       This section uses a Guid to identify the package that provides the command defined inside it. -->
-  <Commands package="guidMitaGithubCopilotRtlPackage">
+  <Commands package="guidMitaGitHubCopilotRtlPackage">
     <!-- Inside this section we have different sub-sections: one for the menus, another
     for the menu groups, one for the buttons (the actual commands), one for the combos
     and the last one for the bitmaps used. Each element is identified by a command id that
@@ -36,7 +36,7 @@
          group as the part of a menu contained between two lines. The parent of a group
          must be a menu. -->
     <Groups>
-      <Group guid="guidMitaGithubCopilotRtlPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+      <Group guid="guidMitaGitHubCopilotRtlPackageCmdSet" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
       </Group>
     </Groups>
@@ -52,16 +52,16 @@
               <CommandFlag>DefaultInvisible</CommandFlag>
               <CommandFlag>DynamicVisibility</CommandFlag>
           If you do not want an image next to your command, remove the Icon node /> -->
-      <Button guid="guidMitaGithubCopilotRtlPackageCmdSet" id="MakeGitHubCopilotRtlId" priority="0x0100" type="Button">
-        <Parent guid="guidMitaGithubCopilotRtlPackageCmdSet" id="MyMenuGroup" />
+      <Button guid="guidMitaGitHubCopilotRtlPackageCmdSet" id="MakeGitHubCopilotRtlId" priority="0x0100" type="Button">
+        <Parent guid="guidMitaGitHubCopilotRtlPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <ButtonText>Enable GitHub Copilot RTL Support</ButtonText>
         </Strings>
       </Button>
 		
-        <Button guid="guidMitaGithubCopilotRtlPackageCmdSet" id="MakeGitHubCopilotRtlDisabledId" priority="0x0100" type="Button">
-	        <Parent guid="guidMitaGithubCopilotRtlPackageCmdSet" id="MyMenuGroup" />
+        <Button guid="guidMitaGitHubCopilotRtlPackageCmdSet" id="MakeGitHubCopilotRtlDisabledId" priority="0x0100" type="Button">
+	        <Parent guid="guidMitaGitHubCopilotRtlPackageCmdSet" id="MyMenuGroup" />
 	        <Icon guid="guidImages" id="bmpPic2" />
 	        <Strings>
 		        <ButtonText>Disable GitHub Copilot RTL Support</ButtonText>
@@ -83,10 +83,10 @@
 
   <Symbols>
     <!-- This is the package guid. -->
-    <GuidSymbol name="guidMitaGithubCopilotRtlPackage" value="{879daee3-3919-4ddc-9d0c-4236cb9cc22b}" />
+    <GuidSymbol name="guidMitaGitHubCopilotRtlPackage" value="{879daee3-3919-4ddc-9d0c-4236cb9cc22b}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidMitaGithubCopilotRtlPackageCmdSet" value="{159657b2-32b7-453a-aabf-0d2b8f82e925}">
+    <GuidSymbol name="guidMitaGitHubCopilotRtlPackageCmdSet" value="{159657b2-32b7-453a-aabf-0d2b8f82e925}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
       <IDSymbol name="MakeGitHubCopilotRtlId" value="0x0100" />
       <IDSymbol name="MakeGitHubCopilotRtlDisabledId" value="0x0101" />		
